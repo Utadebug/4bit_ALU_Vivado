@@ -13,9 +13,9 @@ A synthesizable 4-bit Arithmetic Logic Unit (ALU) implemented in Verilog HDL, ve
 
 ## Verification
 - **Automated Testbench (`alu_4bit_tb.v`):** 100% PASS rate across all test vectors (3,584 combinational checks + 512 sequential checks)[cite: 29].
-- **Platform:** AMD Xilinx Vivado (XSim)[cite: 28, 35].
+- **Platform:** AMD Xilinx Vivado (XSim).
 
 ## FPGA Resource Utilization (Artix-7 xc7a35tcpg236-1)
-- **LUTs:** 60 / 20,800 (0.29%)[cite: 35]
-- **Flip-Flops:** 18 / 41,600 (0.04%)[cite: 35]
-- **IO Pins:** 30 / 106 (28.30%)[cite: 35]
+- **LUTs:** 60 / 20,800 (0.29%)
+- **Flip-Flops:** 18 / 41,600 (0.04%)
+- **IO Pins:** 30 / 106 (28.30%)
