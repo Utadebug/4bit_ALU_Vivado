@@ -6,10 +6,10 @@ A synthesizable 4-bit Arithmetic Logic Unit (ALU) implemented in Verilog HDL, ve
 
  ## Features
 - **Hybrid 10-Operation ALU:** 
-  - **Single-Cycle:** Addition, Subtraction, bitwise logic (`AND`, `OR`, `XOR`, `NOT`), and 1-bit shifts (`SHL`, `SHR`)[cite: 28].
-  - **4-Cycle Multi-Cycle:** Shift-and-Add Multiplication (`MUL`) and Restoring Division (`DIV`) with handshaking (`start`, `busy`, `done`)[cite: 28].
-- **Flag Generation:** Real-time updates for Carry (`C`), Zero (`Z`), Negative (`N`), Overflow (`V`), and Divide-by-Zero (`div_by_zero`)[cite: 28].
-- **Modular RTL:** Partitioned into dedicated functional units (`adder_sub_4bit`, `logic_unit`, `shifter_unit`, `muldiv_core`, `flag_gen`, `result_mux`)[cite: 28].
+  - **Single-Cycle:** Addition, Subtraction, bitwise logic (`AND`, `OR`, `XOR`, `NOT`), and 1-bit shifts (`SHL`, `SHR`).
+  - **4-Cycle Multi-Cycle:** Shift-and-Add Multiplication (`MUL`) and Restoring Division (`DIV`) with handshaking (`start`, `busy`, `done`).
+- **Flag Generation:** Real-time updates for Carry (`C`), Zero (`Z`), Negative (`N`), Overflow (`V`), and Divide-by-Zero (`div_by_zero`).
+- **Modular RTL:** Partitioned into dedicated functional units (`adder_sub_4bit`, `logic_unit`, `shifter_unit`, `muldiv_core`, `flag_gen`, `result_mux`).
 
 ## Verification
 - **Automated Testbench (`alu_4bit_tb.v`):** 100% PASS rate across all test vectors (3,584 combinational checks + 512 sequential checks)[cite: 29].
